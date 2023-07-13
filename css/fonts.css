@@ -1,0 +1,2440 @@
+
+/* mulish-regular - latin */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/mulish-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* mulish-300 - latin */
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/mulish-v11-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v11-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* mulish-700 - latin */
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/mulish-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* mulish-600 - latin */
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/mulish-v11-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v11-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/montserrat-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v24-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+body {
+  max-width:1600px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: white;
+  margin: 0 auto; 
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color:  rgba(0, 0, 0, 1);
+  max-width: 470px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 1);
+} 
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+img {
+  max-width: 100% ;
+  height: auto;
+}
+
+/* header styles start*/
+
+.header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .2s linear ;
+  padding-bottom: 20px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+}
+
+.wrapper{
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 70px;
+  align-items: center;
+}
+
+.logo_trafalgar{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header_T{
+  width:41px; 
+  height:41px; 
+  border-radius:50%; 
+  background-color:#458FF6; 
+  color:#fff; 
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;     
+  text-align:center; 
+  justify-content: center;
+  align-items: center;
+}
+
+.header_trafalgar_text{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #233348;
+  padding-left: 12px;
+}
+
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item{
+  margin-right: 40px;
+}
+
+.header_link{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #1F1534;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+  opacity: 100%;
+  text-shadow: 700;
+} 
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#checkbox_toggle{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hamburger-line{
+  background-color: #000000;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 28px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after{
+  background-color: #000000;
+  content: " ";
+  display: block;
+  position: absolute;
+  transition: all .3s;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-line::before{
+  top: 7px;
+}
+
+.hamburger-line::after{
+  top: -7px;
+}
+
+/*header styles end*/
+
+/*intro styles start */
+
+.intro{
+  margin-top: 130px;
+  margin-bottom: 192px;
+}
+
+.wrapper{
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.intro_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.intro_wrapper_text{
+  height: 338px;
+  max-width: 469px;
+} 
+
+.intro_wrapper_title{
+  font-family: Montserrat;
+  font-size: 48px; 
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 700;
+}
+
+.intro_wrapper_subtitle{
+  color: #7D7987;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  max-width: 440px;
+  margin-bottom: 45px;
+} 
+
+.intro_img{
+  max-width: 693px; 
+}
+
+.btn_intro{
+  Width: 200px;
+  Height:56px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 55px;
+  color: white;
+  background-color: #458FF6;
+  border-color: #458FF6;
+  border-inline-end-color: #458FF6;
+}
+
+.btn_intro:hover{
+  opacity: .90;
+  text-shadow: 700;
+  background-color: #1f56a3
+}
+
+.btn_intro:active{
+  box-shadow: 0 5px rgb(253, 249, 17);
+  transform: translateY(5px);
+}
+
+/*intro styles end*/
+
+/*our services styles start*/
+
+.our_services{
+  margin-bottom: 220px;
+}
+
+.wrapper{
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.services_text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services_title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: black;
+  margin-bottom: 26px;
+}
+
+.services_rectangle{
+  Width:56px;
+  Height:2px;
+  border-radius:5px;
+  background-color: black;
+  margin-bottom: 33px;
+}
+
+.services_subtitle{
+  max-width:952px;
+  color: #7D7987;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.icons_services{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 69px;
+}
+
+.icons_services_products{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:350px;
+  Height:354px;
+  background-color:white;
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  padding-left: 40px;
+  padding-top: 52px;
+  margin-block-end: 37px;
+  margin-inline: auto; 
+}
+
+.icons_services_img{
+  Width: 61px;
+  Height: 104px;
+}
+
+.icons_services_text{
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  height: 56px;
+}
+
+.icons_services_subtitle{
+  width: 266px;
+  height: 84px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7D7987;
+}
+
+.learn_more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_services{
+  Width: 200px;
+  Height:56px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 55px;
+  color: #458FF6;
+  background-color: white;
+  border-color: #458FF6;  
+}
+
+.btn_services:hover{
+  opacity: .90;
+  color: white;
+  background-color: #1f56a3;
+  text-shadow: 700;
+}
+
+.btn_services:active{
+  box-shadow: 0 5px rgb(253, 249, 17);
+  transform: translateY(5px);
+}
+
+/*our services styles end*/
+
+/*leading healthcare styles start*/
+
+.leading_healthcare{
+  margin-bottom: 229px;
+}
+
+.wrapper{
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.leading_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.healthcare_img{
+  max-width:650px;
+  /* height: 477px; */
+}
+
+.healthcare_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.healthcare_title{
+  max-width:481px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+  margin-bottom: 26px;
+}
+
+.healthcare_rectangle{
+  Width:56px;
+  Height:2px;
+  border-radius:5px;
+  background-color: black;
+  margin-bottom: 31px;
+}
+
+.healthcare_subtitle{
+  Width:420px;
+  Height:120px;
+  color: #7D7987;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.btn_healthcare{
+  Width: 200px;
+  Height:56px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458FF6;
+  background-color: white;
+  border-radius: 55px;
+  border-color: #458FF6; 
+}
+
+.btn_healthcare:hover{ 
+  opacity: .90;
+  color: white;
+  background-color: #1f56a3;
+  text-shadow: 700;
+}
+
+.btn_healthcare:active{ 
+  box-shadow: 0 5px rgb(253, 249, 17);
+  transform: translateY(5px);
+}
+
+/*leading healthcare styles end*/
+
+/*download styles start*/
+
+.download{
+  margin-bottom: 266px;
+}
+
+.wrapper{
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.download_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download_text{
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  padding-left: 72px;
+}
+
+.download_title{
+  Width:254px;
+  Height:96px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.download_rectangle{
+  Width:56px;
+  Height:2px;
+  border-radius:5px;
+  background-color: black;
+  margin-bottom: 31px;
+}
+
+.download_subtitle{
+  Width:420px;
+  Height:120px;
+  color: #7D7987;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.btn_download{
+  Width: 200px;
+  Height:56px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458FF6;
+  background-color: white;
+  border-radius: 55px;
+  border-color: #458FF6; 
+}
+
+.btn_download:hover {
+  opacity: .90;
+  color: white;
+  background-color: #1f56a3;
+  text-shadow: 700;
+}
+
+.btn_download:active{
+  box-shadow: 0 5px rgb(253, 249, 17);
+  transform: translateY(5px); 
+}
+
+.img_arrow{
+  Width:10.43px;
+  Height:14.82px;
+  color: #458FF6;
+  bottom: 41.66%;
+}
+
+.download_img{
+  Width:665px;
+  /* Height:434px; */
+}
+
+/*download styles end*/
+
+/*test styles start*/
+
+.test {
+  margin-bottom: 200px;
+}
+
+.testimonials_content {
+  display: flex;
+  background: linear-gradient(to bottom left , #67C3F3 0%, #5A98F2 100% );
+  border-radius: 24px;
+  color: #FFF;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.testimonials_content_title_and_trait {
+  display: flex;
+  max-width: 522px;
+  flex-direction: column;
+  align-items:center;
+}
+
+.testimonials_title {
+  color:#FFF;
+  margin-bottom: 25px;
+  margin-top: 64px;
+}
+
+.testimonials_content_trait {
+  background-color:#fff;
+  width: 56px;
+  height: 2px;
+}
+
+.testimonials_content_avatar_lable_text {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content:space-between;
+  margin: 80px 30px;   
+}
+
+.testimonials_avatar_and_lable {
+  display: flex;
+  margin-right: 110px;
+  max-width: 355px;
+  align-items: center;
+  justify-content: space-between;   
+}
+
+.testimonials_avatar_lable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials_avatar_lable_name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 48px;
+  margin: 0;
+  width: 184px;
+}
+
+.testimonials_avatar_lable_appellation {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  margin: 0;
+  width: 124px;
+}
+
+.testimonials_content_text {
+  display: flex;
+  max-width: 420px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  justify-content: center;
+}
+
+.testimonials_icon {
+  width: 137px;
+  margin-right: 20px;
+  border-radius: 71px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: white;
+  Height: 135px;
+  max-width: 135px;
+}
+
+.vectors{
+  display: flex;
+  align-items: center; 
+  height: 18px;
+  justify-content: center;
+  margin-bottom: 227px;
+}
+
+.img_circle_1{
+  padding-left: 50px;
+  padding-right: 18px;
+}
+
+.img_circle_2{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.img_circle_3{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.img_circle_4{
+  padding-left: 18px;
+  padding-right: 50px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: rgba(91, 155, 243, 1) !important;
+  opacity: 0.3;
+}
+
+.owl-theme .owl-dots .owl-dot span:hover, .owl-theme .owl-dots .owl-dot span:focus, .owl-theme .owl-dots .owl-dot span:active, .owl-theme .owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+
+.owl-nav {
+ position: relative;
+ top: 23px;
+}
+
+.owl-prev {
+  margin-right: 277px !important;
+  color: rgba(69, 143, 246, 1) !important;
+}
+
+.owl-next {
+  color: rgba(69, 143, 246, 1) !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: transparent !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover path {
+  fill: rgba(69, 143, 246, 1);
+  ;
+}
+
+/*test styles end*/
+
+/*latest article styles start*/
+
+.latest_article{
+  margin-top: 157px;
+  margin-bottom: 202px;
+}
+
+.wrapper{
+  max-width: 1247px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.latest_article_text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.latest_article_title{
+  font-weight: 700;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 26px;
+}
+
+.latest_article_rectangle{
+  Width:56px;
+  Height:2px;
+  border-radius:5px;
+  background-color: black;
+  margin-bottom: 72px;
+}
+
+.latest_article_block{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 69px;
+}
+
+.latest_article_icons{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly ;
+  max-width:350px;
+  background-color:white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  margin-block-end: 37px;
+  margin-inline: auto; 
+}
+
+.img_latest_article{
+  max-width: 370px;
+  height: 246px;
+  margin-bottom: 22px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.title_latest_article{
+  Width:300px;
+  color: black;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  height: 64px;
+  margin-bottom: 12px;
+  padding-left: 33px;
+  padding-left: 33px;
+}
+
+.subtitle_latest_article{
+  width: 301px;
+  height: 84px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7D7987;
+  margin-bottom: 25px;
+  padding-left: 33px;
+}
+
+.read_more_img_latest_article{
+  width: 14px;
+  height: 9px;
+  margin-left: 21px;
+} 
+
+.read_more{
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.read_more_latest_article{
+  height: 28px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ED;
+  padding-left: 33px;
+}
+
+.btn_view_all{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn_services{
+  Width: 200px;
+  Height:56px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #458FF6;
+  background-color: white;
+  border-radius: 55px;
+  border-color: #458FF6; 
+}
+
+.btn_latest_article:hover{
+  opacity: .90;
+  color: white;
+  background-color: #1f56a3;
+  text-shadow: 700;
+}
+
+.btn_latest_article:active{
+  box-shadow: 0 5px rgb(253, 249, 17);
+  transform: translateY(5px); 
+}
+
+/*latest article styles end*/
+
+/*footer start*/
+  
+.site_footer{
+  display: flex;
+  flex-direction: column; 
+  max-width: 100%; 
+}
+
+.blue_block_footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 432px;
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.trafalgar_information{
+  display: flex;
+  flex-direction: column;
+}
+
+.tragalgar_mini_logo{
+  display: flex;
+  align-items: baseline;
+}
+
+.trafalgar_mini_T{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px; 
+  color: #5B9BF3;
+  background-color: white;
+  width: 41px;
+  height: 41px;
+  border-radius:50%;
+  padding:5px 13px;
+  text-align:center; 
+  margin-bottom: 17px;
+  text-decoration: none;
+}
+
+.trafalgar_mini_title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding-left: 12px;
+  margin-bottom: 26px;
+  text-decoration: none;
+}
+
+.tragalgar_provides_text{
+  Width:391px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 31px;
+}
+
+.PTY_text{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.company_region_help_icons{
+  display: flex;
+  width: 550px;
+  justify-content: space-between;
+}
+
+.company_region_help_title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.company_region_help_list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding:0;
+}
+
+.company_region_help_subtitle{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.link_footer{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+/*footer end*/
+
+/*media start*/
+@media (max-width: 1261px){
+  .header_T{
+    margin-left: 33px;
+  } 
+
+  .intro_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7px;
+  }
+
+  .latest_article {
+    margin-bottom: 133px;
+  }
+}
+
+@media (max-width: 1240px){
+  h1 {
+    font-size: 40px;
+    max-width: 350px;
+  }
+
+  .leading_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .download_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1220px){
+  .download {
+    margin-bottom: 231px;
+  }
+}
+
+@media (max-width: 1200px){
+
+  .intro_img {
+    max-width: 530px;
+  }
+
+  .healthcare_img {
+    max-width: 530px;
+  }
+
+  .download_img {
+    max-width: 530px;
+  }
+
+  .testimonials_content {
+    border-radius: 111px;
+  }
+} 
+
+@media (max-width: 1146px){
+  .company_region_help_icons{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 435px;
+  }
+}
+
+@media (max-width: 1132px){
+  .icons_services_products{
+    width: 327px;
+  }
+
+  .icons_services_subtitle{
+    width: 220px;
+  }
+}
+
+@media (max-width: 1098px){
+  .latest_article_icons{
+    max-width: 284px;
+  }
+
+  .img_latest_article{
+    height: 222px;
+  }
+
+  .title_latest_article{
+    padding-left: 15px;
+    font-size: 20px;
+  }
+
+  .subtitle_latest_article{
+    padding-left: 15px;
+    width: 287px;
+  }
+
+  .read_more_latest_article{
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1094px){
+  .healthcare_img{
+    max-width: 490px;
+  }
+}
+
+@media (max-width: 1072px){
+  .trafalgar_information{
+    margin-left: 51px;
+  }
+
+  .icons_services_products{
+   padding-left: 34px;
+  }
+}
+
+@media (max-width: 1053px){
+  .intro_img{
+    max-width: 463px;
+  }
+
+  .healthcare_img{
+    max-width: 463px;
+  }
+
+  .icons_services_products{
+    width: 302px;
+  }
+
+  .download_img{
+    max-width: 463px;
+  }
+}
+
+@media (max-width: 1011px){
+  .tragalgar_provides_text{
+    max-width: 347px;
+  }
+
+  .PTY_text{
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 1004px){
+  .healthcare_text{
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 986px){
+
+  .header_T{
+    margin-left: 67px;
+  }
+
+  .intro{
+    margin-bottom: 50px;
+    margin-top: 53px;
+  }
+
+  .intro_wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 1px;
+  }
+
+  .intro_img{
+    max-width: 575px;
+  }
+
+  .intro_wrapper_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 726px;
+  } 
+
+  .intro_wrapper_title{
+    font-size: 41px;
+    max-width: 726px;
+    padding-top: 50px;
+    max-width: 669px;
+  }
+
+  .intro_wrapper_subtitle{
+    width: 686px;
+    text-align: center;
+    max-width: 669px;
+  }
+
+  .icons_services{
+    margin-bottom: 30px;
+  }
+
+  .icons_services_products{
+    width: 279px;
+  }
+
+  .services_subtitle{
+    max-width:839px;
+  }
+
+  .our_services {
+    margin-bottom: 90px;
+  }
+
+  .leading_healthcare{
+    margin-bottom: 118px;
+  }
+
+  .healthcare_img {
+    max-width: 596px;
+  } 
+
+  .healthcare_text{
+    display: flex;
+    align-items: center;
+  }
+
+  .healthcare_title{
+    max-width: 505px;
+    padding-top: 50px;
+  }
+
+  .healthcare_subtitle{
+    width: 686px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .download{
+    margin-bottom: 131px;
+  }
+  .download_wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .download_img{
+    max-width: 596px;
+  }
+
+  .download_text{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .download_title{
+    width: 481px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .download_subtitle{
+    text-align: center;
+    width: 726px;
+    margin-bottom: 0px;
+  }
+
+  .testimonials_content_avatar_lable_text{
+    margin: 60px 130px;
+  }
+
+  .testimonials_content{
+    border-radius: 70px;
+  }
+
+  .testimonials_content_text{
+    font-size: 17px;
+    max-width: 298px;
+  }
+
+  .testimonials_avatar_lable_name{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .testimonials_avatar_lable_appellation {
+    font-size: 17px;
+  }
+
+  .latest_article{
+    margin-bottom: 133px;
+    margin-top: 95px;
+  }
+
+  .latest_article_block {
+    margin-bottom: 19px;
+  }
+
+  .testimonials_title{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 962px){
+  .testimonials_content_avatar_lable_text{
+    margin: 60px 116px;
+  }
+}
+
+@media (max-width: 952px){
+  .icons_services_img {
+    max-width: 70px !important;
+    margin-bottom: 35px;
+  }
+
+  .icons_services_subtitle{
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 23px;
+    width: 240px;
+  }
+}
+
+@media (max-width: 932px){
+  .menu{
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #458FF6;
+    opacity: 80%;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-top: 56px;
+    height: 500px;
+  }
+
+  .header_item {
+    margin-right: 0;
+  }
+
+  .header_link{
+    color: white;
+    display: block;
+    padding: 21px;
+    font-size: 18px;
+    opacity: 100%;
+  }
+
+  .header_link:hover, .header_link:focus, .header_link:active{
+    opacity: 100%;
+    text-shadow: 700;
+  } 
+
+  .hamburger{
+    display: block;
+    padding: 15px 70px;
+  }
+
+  #checkbox_toggle:checked ~ .menu {
+    display: block; 
+    max-height: 100%;
+    transition: all .9s;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+    background-color: transparent;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
+@media (max-width: 930px){
+
+  .intro_wrapper_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1px;
+    max-width: 678px;
+  }
+
+  .intro_wrapper_title{
+    text-align: center;
+    max-width: 678px;
+  }
+
+  .intro_wrapper_subtitle{
+    text-align: center;
+    max-width: 552px;
+  }
+
+  .services_subtitle{
+    max-width: 685px;
+  }
+
+  .services_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons_services{
+    width: 674px;
+  }
+
+  .icons_services_products{
+    width: 311px;
+  }
+
+  .icons_services_img{
+    width: 74px;
+  }
+
+  .latest_article_block{
+    margin-bottom: 27px;
+  }
+
+  .latest_article_icons{
+    max-width: 460px;
+  }
+
+  .img_latest_article{
+    max-width: 451px;
+    height: 319px;
+  }
+
+  .title_latest_article{
+    width: 450px;    
+  }
+
+  .subtitle_latest_article{
+    width: 450px;
+    margin-bottom: 0;
+  }
+
+  .company_region_help_icons{
+    max-width: 396px;
+  }
+}
+
+@media (max-width: 924px){
+  .testimonials_content_avatar_lable_text{
+    margin: 60px 97px;
+  }
+}
+
+@media (max-width: 890px){
+  .intro_img {
+    max-width: 526px;
+  }
+
+  .intro_wrapper_title {
+  font-size: 39px;
+  }
+
+  .healthcare_img {
+    max-width: 551px;
+  }
+
+  .download_img {
+    max-width: 551px;
+  }
+
+  .latest_article_icons{
+    max-width: 432px;
+  }
+
+  .img_latest_article{
+    max-width: 432px;
+    height: 288px;
+  }
+
+  .title_latest_article{
+    width: 432px;    
+  }
+
+  .subtitle_latest_article{
+    width: 432px;
+  }
+}
+
+@media (max-width: 880px){
+  .testimonials_content_avatar_lable_text{
+    margin: 57px 83px;
+  }
+}
+
+@media (max-width: 856px){
+  .testimonials_content_avatar_lable_text{
+    margin: 57px 72px;
+  }
+
+  .tragalgar_provides_text {
+    Width: 310px;
+    font-size: 16px;
+  }
+
+  .company_region_help_icons {
+    max-width: 419px;
+  }
+}
+
+@media (max-width: 830px){
+  .testimonials_content_avatar_lable_text{
+    margin: 57px 52px;
+  }
+}
+
+@media (max-width: 810px){
+  .healthcare_subtitle{
+    width: 571px;
+  }
+
+  .services_subtitle {
+    max-width: 635px;
+  }
+
+  .download_subtitle {
+    width: 551px;
+  }
+
+  .testimonials_content_avatar_lable_text{
+    margin: 49px 52px;
+  }
+
+  .testimonials_avatar_lable_name {
+    font-size: 18px;
+  }
+
+  .testimonials_content_text {
+    font-size: 15px;
+  }
+
+  .latest_article_icons{
+    max-width: 391px;
+  }
+
+  .img_latest_article{
+    max-width: 391px;
+  }
+
+  .title_latest_article{
+    width: 391px;    
+  }
+
+  .subtitle_latest_article{
+    width: 391px;
+  }
+}
+
+@media (max-width: 800px){
+
+  .latest_article {
+    margin-bottom: 73px;
+  }
+  
+  .site_footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blue_block_footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 432px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .trafalgar_information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tragalgar_mini_logo {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+  }
+
+  .trafalgar_mini_T {
+    font-weight: 700;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    padding: 0px 7px;
+    text-align: center;
+    margin-bottom: 17px;
+    text-decoration: none;
+  }
+
+  .trafalgar_mini_title {
+    font-size: 10px;
+    line-height: 30px;
+    color: #5a98f2;
+  }
+
+  .tragalgar_provides_text {
+    Width: 391px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .PTY_text {
+    max-width: 503px;
+    font-size: 12px;
+  }
+
+  .company_region_help_icons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 727px){
+
+  .intro{
+    margin-top: 23px;
+    margin-bottom: 16px;
+  }
+
+  .intro_img {
+    max-width: 430px;
+  }
+
+  .intro_wrapper_title {
+    font-size: 30px;
+  }
+
+  .intro_wrapper_subtitle {
+    text-align: center;
+    
+  }
+
+  .services_title{
+    font-size: 30px;
+  }
+  .services_subtitle {
+    max-width: 511px;
+  } 
+
+  .icons_services_products {
+    padding-left: 30px;
+  }
+
+  .healthcare_img {
+    max-width: 463px;
+  }
+
+  .healthcare_title {
+    font-size: 30px;
+  } 
+
+  .healthcare_subtitle {
+    width: 577px;
+    margin-bottom: 20px;
+  }
+
+  .download{
+    margin-bottom: 80px;
+  }
+
+  .download_img {
+    max-width: 463px;
+  }
+
+  .download_title {
+    font-size: 30px;
+  } 
+
+  .download_subtitle {
+    width: 555px;
+    margin-bottom: 18px;
+  }
+
+  .testimonials_content_avatar_lable_text{
+    margin: 43px 28px;
+  }
+}
+
+
+@media (max-width: 692px){
+  .intro{
+    margin-bottom: 29px;
+  }
+  .intro_img {
+    max-width: 454px;
+  }
+
+  .intro_wrapper_title {
+    font-size: 31px;
+  }
+
+  .intro_wrapper_subtitle{
+    font-size: 20px;
+  }
+
+  .our_services {
+    margin-bottom: 81px;
+  }
+
+  .leading_healthcare {
+    margin-bottom: 112px;
+  }
+
+  .services_title{
+    font-size: 34px;
+  }
+
+  .services_subtitle{
+    max-width: 457px;
+    font-size: 17px;
+  }
+
+  .latest_article {
+    margin-top: 103px;
+  }
+
+  .latest_article_icons{
+    max-width: 352px;
+  }
+
+  .img_latest_article{
+    max-width: 352px;
+    height: 262px;
+  }
+
+  .title_latest_article{
+    max-width: 352px;
+  }
+
+  .subtitle_latest_article{
+    max-width: 352px;
+  }
+
+  .download {
+    margin-bottom: 83px;
+  }
+}
+
+@media (max-width: 675px){
+  .icons_services_products{
+    width: 298px;
+  }
+}
+
+@media (max-width: 665px){
+  .icons_services_products {
+    display: flex;
+    align-items: center;
+    width: 474px;
+    margin-bottom: 36px;
+    padding-left: 0;
+  }
+
+  .icons_services_subtitle{
+    text-align: center;
+  }
+
+  .btn_download {
+    Width: 183px;
+    Height: 49px;
+    font-size: 16px;
+  } 
+
+  .btn_healthcare {
+    Width: 183px;
+    Height: 49px;
+    font-size: 16px;
+  }
+
+  .btn_intro {
+    Width: 183px;
+    Height: 49px;
+    font-size: 16px;
+  }
+
+  .btn_services {
+    Width: 183px;
+    Height: 49px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 633px){
+  .intro_img {
+    max-width: 415px;
+  }
+
+  .healthcare_img {
+    max-width: 420px;
+  }
+
+  .icons_services {
+    width: 364px;
+  }
+
+  .download_img{
+    max-width: 420px;
+  }
+
+  .test {
+    margin-top: 100px;
+  }
+
+  .testimonials_content_avatar_lable_text {
+    display: inline;
+    margin: 25px 15px 25px 25px;
+  }
+
+  .testimonials_avatar_and_lable {
+    justify-content:flex-start;
+    margin-right: 0;
+  }
+
+  .testimonials_content_text {
+    font-size: 15px;
+    margin-top: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .testimonials_title{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 580px){
+  .intro_img {
+    max-width: 359px;
+  }
+
+  .intro_wrapper_title{
+    font-size: 23px;
+  }
+
+  .intro_wrapper_subtitle{
+    font-size: 17px;
+    max-width: 444px;
+  }
+
+  .services_title{
+    font-size: 25px;
+  }
+
+  .services_subtitle{
+    max-width: 379px;
+  }
+
+  .icons_services_products {
+    display: flex;
+    align-items: center;
+  } 
+
+  .icons_services_subtitle{
+    text-align: center;
+  }
+
+  .icons_services_img {
+    width: 64px;
+  }
+
+  .healthcare_img {
+    max-width: 338px;
+  }
+
+  .healthcare_title{
+    font-size: 23px;
+  }
+
+  .healthcare_subtitle{
+    font-size: 17px;
+    width: 396px;
+    margin-bottom: 40px;
+  }
+
+  .download_img {
+    max-width: 338px;
+  }
+
+  .download_title{
+    font-size: 23px;
+  }
+
+  .download_subtitle{
+    font-size: 17px;
+    width: 424px;
+    margin-bottom: 41px;
+  }
+
+  .testimonials_title {
+    font-size: 22px;
+  }
+
+  .latest_article_title{
+    font-size: 28px;
+  }
+
+  .latest_article_icons{
+    max-width: 282px;
+  }
+
+  .img_latest_article{
+    max-width: 282px;
+    height: 197px;
+  }
+
+  .title_latest_article{
+    max-width: 282px;
+    font-size: 17px;
+  }
+
+  .subtitle_latest_article{
+    max-width: 282px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .read_more_latest_article{
+    font-size: 15px;
+  }
+
+  .company_region_help_icons{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .company_region_help_title {
+    font-size: 17px;
+  }
+
+  .company_region_help_subtitle{
+    font-size: 15px;
+  }
+
+  .link_footer{
+    font-size: 15px;
+  }
+
+  .testimonials_content_text {
+    font-size: 15px;
+    margin-top: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .testimonials_icon {
+    height: 119px;
+    max-width: 119px;
+  }
+}
+
+@media (max-width: 550px){
+  .company_region_help_title {
+    font-size: 16px;
+  }
+
+  .link_footer{
+    font-size: 15px;
+  }
+
+  .company_region_help_subtitle{
+    font-size: 15px;
+  }
+
+  .trafalgar_information{
+    margin-left: 0;
+  }
+
+  .PTY_text {
+    max-width: 213px;
+  }
+
+  .tragalgar_provides_text {
+    width: 314px;
+  }
+
+  .trafalgar_mini_logo{
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 535px){
+
+  .icons_services {
+    width: 356px;
+  }
+
+  .icons_services_products {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .download_title {
+    width: 299px;
+  }
+
+  .download_text{
+    width: 299px;
+  }
+
+  .testimonials_icon{
+    height: 116px;
+    max-width: 116px;
+  }
+
+  .test {
+    margin-top: 90px;
+  }
+  .testimonials_content_avatar_lable_text {
+    display: inline;
+    margin: 25px 15px 25px 25px;
+  }
+  .testimonials_avatar_and_lable {
+    justify-content:flex-start;
+    margin-right: 0;
+  }
+
+  .btn_download {
+    Width: 147px;
+    Height: 43px;
+    font-size: 14px;
+  } 
+
+  .btn_healthcare {
+    Width: 147px;
+    Height: 43px;
+    font-size: 14px;
+  }
+
+  .btn_intro {
+    Width: 147px;
+    Height: 43px;
+    font-size: 14px;
+  }
+
+  .btn_services {
+    Width: 147px;
+    Height: 43px;
+    font-size: 14px;
+  }
+} 
+
+@media (max-width: 470px){
+  .intro_img {
+    max-width: 300px;
+  }
+
+  .intro_wrapper_title {
+    font-size: 20px;
+  }
+
+  .intro_wrapper_subtitle {
+    font-size: 16px;
+    max-width: 314px;
+  }
+
+  .services_title {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  .services_subtitle {
+    max-width: 304px;
+  }
+
+  .icons_services_img {
+    width: 90px;
+    margin-bottom: 7px;
+  }
+
+  .icons_services_text {
+    font-size: 19px;
+  }
+
+  .icons_services_subtitle {
+    font-size: 12px;
+    width: 225px;
+  }
+
+  .healthcare_img {
+    max-width: 300px;
+  }
+
+  .healthcare_title {
+    font-size: 20px;
+  }
+
+  .healthcare_subtitle {
+    font-size: 17px;
+    width: 359px;
+    margin-bottom: 60px;
+  }
+
+  .download_img {
+    max-width: 300px;
+  }
+
+  .download_title {
+    font-size: 20px;
+  }
+
+  .download_subtitle {
+    font-size: 17px;
+    width: 319px;
+    margin-bottom: 60px;
+  }
+
+  .latest_article_title {
+    font-size: 21px;
+    width: 270px;
+  }
+
+  .img_latest_article {
+    max-width: 224px;
+    height: 177px;
+  }
+
+  .latest_article_icons {
+    max-width: 224px;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  .latest_article_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title_latest_article {
+    max-width: 214px;
+    font-size: 15px;
+  }
+
+  .subtitle_latest_article {
+    max-width: 182px;
+    font-size: 14px;
+    margin-bottom: 37px;
+  }
+
+  .link_footer {
+    font-size: 14px;
+  }
+
+  .company_region_help_subtitle {
+    font-size: 14px;
+  }
+
+  .company_region_help_title {
+    font-size: 15px;
+  }
+
+  .company_region_help_icons {
+    max-width: 388px;  
+  }
+
+  .tragalgar_provides_text {
+    Width: 204px;
+  }
+}
+
+@media (max-width: 389px){
+  .icons_services_products{
+    width: 330px;
+  }
+
+  .testimonials_content_trait {
+    width: 46px;
+    height: 2px;
+  }
+
+  .testimonials_title {
+    font-size: 17px;
+  }
+
+  .testimonials_avatar_lable_name {
+    font-size: 14px;
+    line-height: 1px;
+  }
+
+  .testimonials_avatar_lable_appellation {
+    font-size: 13px;
+  }
+
+  .testimonials_icon {
+    height: 97px;
+    max-width: 96px;
+  }
+
+  .testimonials_avatar_lable_appellation {
+    width: 96px;
+  }
+
+  .testimonials_avatar_lable_name {
+    width: 123px;
+  }
+
+  .testimonials_content_text {
+    font-size: 14px;
+    max-width: 218px;
+    line-height: 23px;  
+  }
+
+  .company_region_help_icons {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 301px;
+  }
+  
+  .latest_article_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 129px;
+    width: 0px;
+    margin-left: 177px;
+  }
+
+  .link_footer {
+    font-size: 12px;
+  }
+
+  .company_region_help_subtitle {
+    font-size: 12px;
+  }
+
+  .company_region_help_title {
+    font-size: 13px;
+  }
+
+  .tragalgar_provides_text{
+    font-size: 10px;
+    max-width: 193px;
+  }
+
+  .PTY_text{
+    font-size: 10px;
+    max-width: 128px;
+    line-height: 21px;
+  }
+
+  .trafalgar_mini_logo{
+    margin-right: 0;
+  }
+
+  .btn_download {
+    Width: 130px;
+    Height: 34px;
+    font-size: 12px;
+  } 
+
+  .img_arrow {
+    Width: 5.43px;
+    Height: 8.82px;
+  }
+
+  .btn_healthcare {
+    Width: 130px;
+    Height: 34px;
+    font-size: 12px;
+  }
+
+  .btn_intro {
+    Width: 130px;
+    Height: 34px;
+    font-size: 12px;
+  }
+
+  .btn_services {
+    Width: 130px;
+    Height: 34px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px){
+  .intro_img {
+    max-width: 256px;
+  }
+  .intro_wrapper_title {
+    font-size: 18px;
+  }
+
+  .intro_wrapper_subtitle {
+    font-size: 14px;
+  }
+
+  .services_subtitle {
+    font-size: 14px;
+  }
+
+  .services_rectangle {
+    Width: 44px;
+  }
+
+  /* .icons_services{
+    margin-bottom: 12px;
+  }
+
+  .icons_services_text {
+    font-size: 16px;
+  } */
+
+  .healthcare_img {
+    max-width: 256px;
+  }
+
+  .healthcare_title {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+
+  .healthcare_subtitle {
+    font-size: 14px;
+    width: 254px;
+  }
+
+  .download_img {
+    max-width: 256px;
+  }
+
+  .download_title {
+    font-size: 18px;
+    margin-bottom: 13px;
+    Height: 71px;
+  }
+
+  .download_subtitle {
+    font-size: 14px;
+    width: 254px;
+  }
+
+  .testimonials_content_title_and_trait {
+    max-width: 238px;
+  }
+
+  .testimonials_icon {
+    height: 88px;
+    max-width: 88px;
+  }
+
+  .testimonials_avatar_lable_name {
+    font-size: 12px;
+  }
+
+  .testimonials_avatar_lable_appellation {
+    font-size: 12px;
+  }
+
+  .testimonials_content {
+    border-radius: 57px;
+  }
+
+  .testimonials_content_text {
+    font-size: 12px;
+  }
+
+  .testimonials_title {
+    font-size: 16px;
+  }
+
+  .latest_article_text{
+    height: 59px;
+  }
+
+  .latest_article_title {
+    font-size: 18px;        
+  }
+
+  .latest_article_rectangle{
+    display: none;
+  }
+
+  .owl-prev {
+    margin-right: 150px !important;
+  }
+  .owl-nav {
+    top:28px;
+  }
+}
+
+@media (max-width: 368px){
+  .header_T {
+    margin-left: 47px;
+  }
+
+  .hamburger{
+    display: block;
+    padding: 15px 47px;
+  }
+}
+
+@media (max-width: 389px){
+  .icons_services_products {
+    width: 271px;
+  }
+
+  .icons_services_subtitle {
+    width: 172px;
+}
+}
+
+@media (max-width: 344px){
+  .header_T {
+    margin-left: 26px;
+  }
+
+  .hamburger{
+    display: block;
+    padding: 15px 23px;
+  }
+}
+
+  @media (max-width: 330px){
+
+  .latest_article_title {
+    width: 254px;
+  }
+
+  .latest_article_text{
+    margin-left: 163px;
+  }
+}
+
+
